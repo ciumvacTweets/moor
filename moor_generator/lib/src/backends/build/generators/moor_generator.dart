@@ -6,13 +6,10 @@ import 'package:source_gen/source_gen.dart';
 const _ignoredLints = [
   'unnecessary_brace_in_string_interps',
   'unnecessary_this',
-  // more style rules from the Flutter repo we're violating. Should we fix
-  // those?
-  /*
   'always_specify_types',
   'implicit_dynamic_parameter',
   'sort_constructors_first',
-  'lines_longer_than_80_chars',*/
+  'lines_longer_than_80_chars',
 ];
 
 class MoorGenerator extends Generator implements BaseGenerator {
