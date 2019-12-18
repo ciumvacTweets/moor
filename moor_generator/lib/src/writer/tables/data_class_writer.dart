@@ -113,7 +113,7 @@ class DataClassWriter {
           'Map<String, dynamic> json,'
           '{ValueSerializer serializer = const ValueSerializer.defaults()}'
           ') {\n')
-      ..write('return $dataClassName(');
+      ..write('return <String, dynamic>$dataClassName(');
 
     for (var column in table.columns) {
       final getter = column.dartGetterName;
