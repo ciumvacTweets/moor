@@ -113,7 +113,7 @@ class DataClassWriter {
           'Map<String, dynamic> json,'
           '{ValueSerializer serializer = const ValueSerializer.defaults()}'
           ') {\n')
-      ..write('return <String, dynamic>$dataClassName(');
+      ..write('return $dataClassName(');
 
     for (var column in table.columns) {
       final getter = column.dartGetterName;
@@ -138,7 +138,7 @@ class DataClassWriter {
   void _writeToJson() {
     _buffer.write('@override Map<String, dynamic> toJson('
         '{ValueSerializer serializer = const ValueSerializer.defaults()}) {'
-        '\n return {');
+        '\n return <String, dynamic>{');
 
     for (var column in table.columns) {
       final name = column.getJsonKey(scope.options);
