@@ -11,6 +11,7 @@ const _ignoredLints = [
   'sort_constructors_first',
   'lines_longer_than_80_chars',
   'avoid_renaming_method_parameters',
+  'always_specify_types',
 ];
 
 class MoorGenerator extends Generator implements BaseGenerator {
